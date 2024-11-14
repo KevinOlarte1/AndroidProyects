@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Contenedores de los puntajes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="16dp">
+
+        <!-- Puntaje de Jugador 1 -->
+        <TextView
+            android:id="@+id/txtScorePlayer1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="000"
+            android:textSize="24sp"
+            android:textColor="#0000FF"
+            android:gravity="center"/>
+
+        <!-- Puntaje de Jugador 2 -->
+        <TextView
+            android:id="@+id/txtScorePalyer2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="000"
+            android:textSize="24sp"
+            android:textColor="#FF0000"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Cuadrícula de 3x3 para el tablero de juego -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+        <!-- Botones del tablero de 3x3 -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5sp"
+            android:background="#D3D3D3"
+            android:text=""
+            android:textSize="36sp" />
+    </GridLayout>
+
+    <!-- Botón para empezar un nuevo juego -->
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW GAME"
+        android:layout_marginTop="24dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:textSize="18sp"/>
+</LinearLayout>

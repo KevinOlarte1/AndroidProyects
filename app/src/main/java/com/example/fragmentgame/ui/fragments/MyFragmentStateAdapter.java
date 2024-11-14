@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class MyFragmentStateAdapter extends FragmentStateAdapter {
-    private final int NUM_TABS = 3;
+    private final int NUM_TABS = 2;
     public MyFragmentStateAdapter(FragmentActivity fa) {
         super(fa);
     }
@@ -15,8 +15,7 @@ public class MyFragmentStateAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         return switch (position) {
             case 0 -> new AhorcadoFragment();
-            case 1 -> new SecondFragment();
-            case 2 -> new ThirdFragment();
+            case 1 -> new TresEnRallaFragment();
             default -> throw new RuntimeException("Invalid Fragment");
         };
     }
