@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FragmentGame</string>
+    <string name="AHORCADO">Ahorcado</string>
+    <string name="TRES_EN_RALLA">Tres En Ralla</string>
+    <string name="THIRD">Tercero</string>
+    <string name="seccion">cuerpo</string>
+    <string name="AHORCADOVIDAS">Intentos Restantes:</string>
+</resources>

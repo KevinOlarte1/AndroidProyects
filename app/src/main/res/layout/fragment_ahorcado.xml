@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título del Juego -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AHORCADO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Imagen del Ahorcado (usando un ImageView para el dibujo) -->
+    <ImageView
+        android:id="@+id/imgAhorcado"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/hangman_6" />
+
+    <!-- Texto de Intentos Restantes -->
+    <TextView
+        android:id="@+id/txtIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intentos restantes: 6"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Espacio para las letras del ahorcado -->
+    <LinearLayout
+        android:id="@+id/wordLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Ejemplo de líneas para letras, se añadirán dinámicamente en el código Java -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ "
+            android:textSize="24sp"/>
+
+        <!-- Añadir más TextViews dinámicamente para cada letra -->
+    </LinearLayout>
+
+    <!-- Campo de entrada para letras -->
+    <TextView
+        android:id="@+id/txtLetrasIncorrectas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letras"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/inputLetra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca una letra"
+        android:maxLength="1"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón de Jugar -->
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JUGAR"/>
+
+</LinearLayout>
